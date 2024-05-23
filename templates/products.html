@@ -1,0 +1,15 @@
+<title>Products</title>
+
+<h1>Products</h1><br>
+
+
+<body>
+{% for product in products %}
+    <a href="{% url 'products:detail' product.pk %}" >{{ product.model }}</a><hr>
+{% endfor %}
+
+</body>
+
+
+
+
